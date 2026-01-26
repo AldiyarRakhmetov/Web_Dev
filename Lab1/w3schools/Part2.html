@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!--CSS-->
+<html lang="en"> 
+    <head>
+        <title>Part 2</title> <!--Title-->
+        <style>
+
+            h6 {
+                color:blueviolet;
+                background-color: brown;
+                font-size: 200%;
+            }
+
+            a:link { /*Link colors*/
+                color:#800080
+            }
+
+            p { /*Background images*/
+                color:rgb(177, 121, 0);
+                background-image: url('https://www.w3schools.com/images/w3schools_green.jpg'); 
+            }
+
+            table, th, td { /*Table*/
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            th, td {
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 40px;
+            }
+            tr:hover {background-color: #000000;}
+
+            div { /*Div*/
+                float: left;
+            }
+
+            .exampleClass { /*Classes*/
+                color: red;
+            }
+
+            #thanks { /*Id*/
+                color:blue;
+            }
+
+        </style>
+
+        <link rel="stylesheet" href="Lab1_CSS.css">
+
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvxC_0pVR-wRxGG06N9ph-ItorTsOblWBMg&s"> <!--Favicon-->
+
+    </head>
+    <body>
+        <h1><a href="#thanks">PRESS ME</a></h1> <!--Links bookmark-->
+
+        <h6>h6 test</h6>
+        <h5>h5 test</h5>
+
+        <a href="https://www.w3schools.com/">Shout-out to W3Schools.com!</a> <!--Links-->
+
+        <a href="https://docs.google.com/document/d/11E5-4tWljnTiSv4goILORw78CpUUUrXm5IpVGpa_AnA/edit?tab=t.0" target="_blank">Here's the file with seperate window</a>
+
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+        <p id="thanks">round round round we go</p>
+
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" usemap="#wholepicture"> <!--Images; maps--> 
+        <map name="wholepicture">
+            <area shape="rect" coords="0, 0, 999, 999" alt="whole picture" href="https://www.w3schools.com/">
+        </map>
+
+        <table> <!--Table-->
+            <tr>
+                <td style="width:90%">1</td>
+                <th rowspan="2">2</th>
+            </tr>
+            <tr style="height:200%">
+                <td>3</td>
+            </tr>
+            <tr>
+                <th colspan="2">4</th>
+            </tr>
+        </table>
+
+        <ul> <!--Lists-->
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            <ul style="list-style-type: armenian;">
+                <li>Nested</li>
+                <li>List</li>
+            </ul>
+        </ul>
+        <ol start="999999999" type="A">
+            <li>Peas</li>
+            <li>Corn</li>
+            <li>Beans</li>
+        </ol>
+        <dl>
+            <dt>I'll be honest:</dt>
+            <dd>I realised to late that I probably should've made the site a bit more presentable</dd>
+            <dd>then again, that wasn't in our task description</dd>
+        </dl>
+
+        <div style="font-weight: bolder;"> <!--Block and Inline-->
+            <p>Bold text</p>
+            <p>Except it's bolder</p>
+        </div>
+        <p><span style="font-weight: lighter;">Light text</span> that will not be lighter
+        <span style="font-weight: bold;">if the other span appears</span></p>
+
+        <h3 class="exampleClass">Now here are</h3>
+        <h2 class="exampleClass">headers with</h2>
+        <h1 class="exampleClass">the same class.</h1>
+    </body>
+</html> 

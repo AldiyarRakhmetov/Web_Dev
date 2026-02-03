@@ -1,0 +1,32 @@
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+    list-style: none;
+}
+
+.option {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.rec-option {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}

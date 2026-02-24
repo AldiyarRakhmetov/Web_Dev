@@ -122,7 +122,7 @@ let date = new Date(2014, 0, 3);
 alert( getWeekDay(date) );
 function getLocalDay(date) {
     let day = date.getDay();
-    if (day == 0) { // weekday 0 (sunday) is 7 in european
+    if (day == 0) { 
         day = 7;
     }
     return day;
@@ -148,7 +148,7 @@ function formatDate(date) {
         '' + d.getFullYear(),
         '0' + d.getHours(),
         '0' + d.getMinutes()
-    ].map(component => component.slice(-2)); // take last 2 digits of every component
+    ].map(component => component.slice(-2));
     return d.slice(0, 3).join('.') + ' ' + d.slice(3).join(':');
 }
 alert( formatDate(new Date(new Date - 1)) );

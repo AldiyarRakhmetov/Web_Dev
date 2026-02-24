@@ -31,7 +31,7 @@ function createTodoItem(text) {
   const delBtn = document.createElement("button");
   delBtn.type = "button";
   delBtn.className = "btn-delete";
-  delBtn.textContent = "🗑";
+  delBtn.textContent = "Delete";
 
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {

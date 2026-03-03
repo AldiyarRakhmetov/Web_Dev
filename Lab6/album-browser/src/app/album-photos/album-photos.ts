@@ -28,7 +28,10 @@ export class AlbumPhotosComponent implements OnInit {
     this.albumId = Number(this.route.snapshot.paramMap.get('id'));
 
     this.albumService.getAlbumPhotos(this.albumId).subscribe(data => {
-      this.photos = data;
+      this.photos = data.map(dataling => ({
+        ...dataling,
+        thumbnailUrl: 'https://picsum.photos/150?random=' + dataling.id,
+      }));
       this.loading = false;
     });
   }

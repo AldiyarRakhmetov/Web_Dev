@@ -18,7 +18,7 @@ export class AlbumsComponent implements OnInit {
   constructor(private albumService: AlbumService) {}
 
   ngOnInit(): void {
-    this.albumService.loadAlbums();   // вызываем 1 раз
+    this.albumService.loadAlbums();  
     this.albums$ = this.albumService.getAlbums();
   }
 

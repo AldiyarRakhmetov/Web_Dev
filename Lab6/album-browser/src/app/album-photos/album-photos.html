@@ -3,7 +3,7 @@
 
   <div class="grid">
     <div class="photo-card" *ngFor="let photo of photos">
-      <img [src]="'https://picsum.photos/150?random=' + photo.id">
+      <img [src]="photo.thumbnailUrl">
       <p>{{ photo.title }}</p>
     </div>
   </div>
